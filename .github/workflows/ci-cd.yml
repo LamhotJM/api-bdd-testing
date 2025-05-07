@@ -27,13 +27,6 @@ jobs:
       - run: mvn clean install --no-transfer-progress
       - run: mvn test --no-transfer-progress
 
-      - name: Archive test results
-        if: always()
-        uses: actions/upload-artifact@v2    # ← reverted to v2
-        with:
-          name: test-results
-          path: target/surefire-reports/*.xml
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
