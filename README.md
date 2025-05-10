@@ -25,6 +25,6 @@
 
 ## Prerequisites
 
-- Java 11+ or Python 3.8+ or Node.js 14+
-- Maven/Gradle (for Java) or pytest/Behave (for Python) or Cucumber.js (for JavaScript)
+- Java 11+
+- Maven/Gradle (for Java)
 - Git 2.20+
